@@ -42,10 +42,10 @@ public class AutomatedSessionRemindersTest extends BaseUiTestCase {
         browser = BrowserPool.getBrowser();
     }
     
-    /* In these tests, we set the email address of a student to be the same as the
-     * support email address and trigger email alerts. When running these tests
-     * against a production server, these alerts will appear in the admin's
-     * email box. The admin should manually check the email box after running 
+    /* 
+     * When running these tests against a production server, email alerts will
+     * be sent to the specified instructor and one of the student accounts'
+     * email box. The tester should manually check the email box after running 
      * the test suite. 
      */
     
