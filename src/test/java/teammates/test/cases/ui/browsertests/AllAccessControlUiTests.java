@@ -19,6 +19,7 @@ import teammates.test.pageobjects.BrowserPool;
 import teammates.test.pageobjects.DevServerLoginPage;
 import teammates.test.pageobjects.GoogleLoginPage;
 import teammates.test.pageobjects.HomePage;
+import teammates.test.pageobjects.IndexPage;
 import teammates.test.pageobjects.LoginPage;
 import teammates.test.pageobjects.NotFoundPage;
 import teammates.test.util.Priority;
@@ -72,7 +73,8 @@ public class AllAccessControlUiTests extends BaseUiTestCase {
     @Test
     public void testUserNotLoggedIn() throws Exception {
         
-        currentPage.logout().verifyHtml("/login.html");
+        currentPage.logout();
+        AppPage.getNewPageInstance(browser, IndexPage.class);
 
         ______TS("student pages");
 
