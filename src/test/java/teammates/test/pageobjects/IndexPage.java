@@ -9,7 +9,7 @@ public class IndexPage extends AppPage {
     @Override
     protected boolean containsExpectedPageContents() {
         String pageSource = getPageSource();
-        return pageSource.contains("Student Login") && pageSource.contains("Instructor Login");
+        return pageSource.contains("Student peer evaluations/feedback, shareable instructor comments, and more...");
     }
 
 }
